@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>play</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="35" cy="35" r="35"></circle>
+    </defs>
+    <g id="Page-1-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-4" transform="translate(-771.000000, -540.000000)">
+            <g id="Group-4" transform="translate(771.000000, 540.000000)">
+                <g id="play">
+                    <g id="Oval-2">
+                        <use fill="#EEDDDB" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <circle stroke="#1E1621" stroke-width="2" cx="35" cy="35" r="34"></circle>
+                    </g>
+                    <polyline stroke="#1E1621" stroke-width="2" points="28 22 28 48.0869152 47.6779785 34.9519043 31.9621582 22.8798828 31.9621582 40.4211426 40.4467773 34.9519043"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

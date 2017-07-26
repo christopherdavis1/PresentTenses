@@ -1,0 +1,438 @@
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+p {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html, body {
+  height: 100%;
+  background: #EEDDDB;
+  color: #1E1621;
+  font-family: 'Karla', sans-serif;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+/* ==========================================================================
+   Responsive Styles
+   ========================================================================== */
+
+   @media only screen and (min-width: 360px) {
+
+    .contentWrapper {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    header {
+      padding-top: 20px;
+    }
+
+     .main {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: flex-end;
+       flex: 1;
+     }
+
+     .bodyContent {
+       max-width: 400px;
+     }
+
+     .description {
+       font-size: 1.6em;
+       line-height: 1.6em;
+       font-weight: 400;
+     }
+
+     .key {
+       font-family: 'Nova Cut', cursive;
+       font-size: 1.5em;
+     }
+
+     .playArea {
+       padding-top: 20px;
+       display: flex;
+     }
+
+     .linkContent {
+       padding-left: 20px;
+       padding-top: 10px;
+     }
+
+     .youtubeLink {
+       font-family: 'Nova Cut', cursive;
+       font-size: 1.5em;
+       text-decoration: none;
+       color: #1E1621;
+       margin-bottom: 0;
+       padding-bottom: 0;
+     }
+
+     .current {
+       margin-top: 0;
+       padding-top: 0;
+       text-decoration: none;
+       color: #B16161;
+       font-size: 0.8em;
+     }
+
+     footer {
+       margin-top: auto;
+     }
+
+     .meghanLink {
+       font-size: 0.9em;
+       margin-bottom: 15px;
+     }
+
+     .meghanLink a {
+       text-decoration: none;
+       color: #B16161;
+     }
+
+     .meghanLink a img {
+       padding-right: 10px;
+       margin-top: -2px;
+     }
+
+     .content {
+      color: #A29BA5;
+      font-size: 0.9em;
+      display: flex;
+      justify-content: space-between;
+     }
+
+     .links {
+       display: flex;
+     }
+
+     .links a {
+       text-decoration: none;
+       color: #B16161;
+       justify-content: flex-end;
+     }
+
+     .email {
+       padding-right: 20px;
+       border-right: 2px solid #F3B2B1;
+     }
+
+     ul {
+      -webkit-margin-before: 0em;
+      -webkit-margin-after: 0em;
+      -webkit-padding-start: 20px;
+     }
+
+     ul li {
+       display: inline-block;
+       padding-right: 20px;
+     }
+   }
+
+   @media only screen and (min-width: 1200px) {
+
+     .main {
+       padding-top: 100px;
+     }
+   }
+
+   @media only screen and (max-width: 480px) {
+
+     .contentWrapper {width: 90%;}
+
+     header img {max-width: 80%;}
+
+     .main {padding-top: 30px;}
+
+     .key {
+       font-size: 1.2em;
+     }
+
+     .playIcon img {
+       max-width: 80%;
+     }
+
+     .linkContent {
+       padding-left: 0;
+       padding-top: 8px;
+     }
+
+     .youtubeLink {font-size: 1.2em;}
+
+     footer {margin-top: 50px;}
+     .content{
+       display: block;
+       padding-top: 10px;
+     }
+
+     .links {padding-top: 20px;}
+   }
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media print,
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
